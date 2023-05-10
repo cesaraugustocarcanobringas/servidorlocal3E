@@ -5,9 +5,8 @@
     <head>
 
         <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Encriptador de texto CACB</title>
-        <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style2.css">
         
        
@@ -16,7 +15,7 @@
     <body>
 
         <header>
-            <div class="areadetexto">
+            <div class="arealogo">
                 <h1>logo Alura</h1>
             </div>
         </header>
@@ -25,25 +24,24 @@
             <section class="areageneral">
                 
                 <section class="areaMensaje">
-                    <textarea cols="30" rows="20" id="areaescribir" class="areaescribir" required placeholder="ingresa el texto aqui"></textarea>
-                </section>
+                        <textarea cols="30" rows="10" id="areaescribir" class="areaescribir" required placeholder="ingresa el texto aqui"></textarea>
+                    <section class="condiciones">
+                        <p>Sólo letras minúsculas y sin acentos</p>
+                    </section>
+                    <section class="accion">
+                        <input type="button" class="botencriptado" value="encriptar" onclick="encriptado()">
+                        <input type="button" class="botdesencriptado" value="desencriptar" onclick="desencriptado()">
+                    </section>
+                
+                    <section class="resultado">
+                        <img src="imagen/1.png" alt="" id="lupita"/>
+ 
+                    </section>
+                
 
-                <section class="condiciones">
-                    <p>Sólo letras minúsculas y sin acentos</p>
-                </section>
-                <section class="accion">
-                    <input type="button" class="encriptado" value="encriptado" onclick="encriptado()">
-                    <input type="button" class="desencriptado" value="desencriptado" onclick="desencriptado()">
                 </section>
                 
-                <section class="resultado">
-                    <img src="imagen/1.png" alt="" id="fondoresultado">
-                    <div class="textoresultado" id="textoresultado">
-                        
-                        <textarea name="mensaje"  id="mensaje" cols="30" rows="20" clase="mensaje"></textarea> 
-                    </div>
-                </section>
-                
+               
 
             </section>
                                 
@@ -54,4 +52,5 @@
     </footer>    
         
     </body>
+     
 </html>

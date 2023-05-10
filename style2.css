@@ -1,2 +1,133 @@
+*{
+    padding: 0;
+    margin: 0px;
+}
+
+.arealogo{
+    background-color:rgb(192, 207, 239);    
+}
+
+.areageneral{
+    position:relative;
+    width:100vw;
+    height:90vh;
+    background-color:rgb(192, 207, 239);
+}
+  
+.areaescribir{
+    position:absolute;
+    width: 40%;
+    height: 60%;
+    padding: 20px 30px;
+    border: none;
+    background-color:rgb(192, 207, 239);
+    font-family:times;
+    font-size:40px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 120%;   
+}
+
+.areaescribir::placeholder{
+    color:rgb(21, 83, 150);
+    }  
+
+.areaescribir:focus,.areaescribir:active{
+    border: none;
+    outline: none;
+}
+
+.condiciones{
+    font-size:16px;
+    color: gray;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    left: 30px;
+    gap: 8px;
+    position: absolute;
+    width:80%;
+    top:75%   
+}
+
+.accion{
+    display:flex;
+    flex-direction: row;
+    align-items:flex-start;
+    padding: 7px 10px;
+    position:absolute;
+    width: 70%;
+    left: 5px;
+    top:84%;
+    }
+
+.botencriptado{
+    color:yellow;
+    align-items: center;
+    padding: 1%;
+    gap: 2px;
+    width: 17%;
+    background-color: rgb(9, 43, 143);
+    border-radius: 30px;
+    border-color: rgb(133, 153, 20);
+    font-size: 20px;
+    font-family:times;
+    font-style: oblique;
+}
+
+.botdesencriptado{
+    color:white;
+    align-items: center;
+    padding: 1%;
+    gap: 2px;
+    width: 17%;
+    background-color: rgb(74, 74, 76);
+    border-radius: 30px;
+    border-color: rgb(133, 153, 20);
+    font-size: 20px;
+    font-family:times;
+    font-style: oblique;
+}
+
+.botdesencriptado:hover, .botencriptado:hover{
+    border-color: white;
+    padding:1.1%;
+    width:22%;
+    font-size: 28px;    
+    margin: 0.6%;
+}
+
+.resultado{
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    width: 35%;
+    height: 60%;
+    left:60%;
+    top:10%;
+    font-size: 14px;
+    font-family:times;
+    font-style: oblique;
+    background-color: white;
+    box-shadow: 10px 10px 30px 15px #000000;
+    border-radius: 25px;
+}
+
+    .resultado img{
+        position:absolute;
+        width: 55%;
+        height: 80%;
+        top: 0%;
+        margin: 10%;
+    }
 
 
+
+
+    footer{
+        text-align: center;
+        padding:2px;
+        color: blue;
+        top:80%;   
+    }
