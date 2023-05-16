@@ -100,7 +100,7 @@
 
 .resultado{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     position: absolute;
     width: 35%;
     height: 60%;
@@ -114,15 +114,39 @@
     border-radius: 25px;
 }
 
-    .resultado img{
+.resultado img{
         position:absolute;
-        width: 55%;
-        height: 80%;
+        width: 35%;
+        height: 40%;
         top: 0%;
-        margin: 10%;
+        margin: 5%;
+        left:100px;
     }
 
+.resultado h2{
+        width:100%;
+        height: 10%;
+        margin-top: 80%;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 110%;
+        text-align: center;
+    }
 
+.resultado p{
+        width:100%;
+        display: block;
+        height:90%;
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 140%;
+        text-align: center;
+        margin-top: 3%;
+    }
 
 
     footer{
@@ -131,3 +155,96 @@
         color: blue;
         top:80%;   
     }
+
+    /*Responsive Design*/
+@media (max-width:57.5em) {
+        .areageneral{
+            display: flex;
+            flex-direction:row;
+        }
+        .areaMensaje{
+            width: 100%;
+        }
+        .areaescribir{
+            width: 80%;
+            height: 60%;
+            left: 10%;
+            top: 10%;
+        }
+        .condiciones{
+            width: 80%;
+            left: 10%;
+            top: 67%;
+        }
+        .condiciones p{
+            font-size: 19px;
+        }
+        .accion{
+            width: 80%;
+            left: 10%;
+            top: 71%;
+        }
+        .botencriptado{
+            color:yellow;
+            align-items: center;
+            padding: 1%;
+            gap: 2px;
+            width: 30%;
+            background-color: rgb(9, 43, 143);
+            border-radius: 20px;
+            border-color: rgb(133, 153, 20);
+            font-size: 15px;
+            font-family:times;
+            font-style: oblique;
+        }
+        .botdesencriptado{
+            color:white;
+            align-items: center;
+            padding: 1%;
+            gap: 2px;
+            width: 30%;
+            background-color: rgb(74, 74, 76);
+            border-radius: 20px;
+            border-color: rgb(133, 153, 20);
+            font-size: 15px;
+            font-family:times;
+            font-style: oblique;
+        }
+        .botdesencriptado:hover, .botencriptado:hover{
+            color:rgb(82, 239, 9);
+            border-color: white;
+            padding:1.1%;
+            width:35%;
+            font-size: 18px; 
+            font-style:italic;   
+            margin: 0.3%;
+        }
+        .resultado{
+            position:absolute;
+            width: 80%;
+            height: 15%;
+            top:80%;
+            left: 40px;
+        }
+        .resultado img{
+            display: none;    
+        }
+        .resultado h2{
+        
+            padding: 1% ;
+            margin-top: 3%;
+            font-size: 15px;
+            width:100%;
+            display:block; 
+            height: 10%;
+        }
+        .resultado p{
+            font-size: 13px;
+            width:100%;
+            display:block; 
+            top: 15%;
+        }
+
+
+    }
+

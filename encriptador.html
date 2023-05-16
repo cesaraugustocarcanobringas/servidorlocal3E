@@ -24,7 +24,7 @@
             <section class="areageneral">
                 
                 <section class="areaMensaje">
-                        <textarea cols="30" rows="10" id="areaescribir" class="areaescribir" required placeholder="ingresa el texto aqui"></textarea>
+                        <textarea name="areaescribir"  id="areaescribir" class="areaescribir" cols="30" rows="10" required placeholder="ingresa el texto aqui"></textarea>
                     <section class="condiciones">
                         <p>Sólo letras minúsculas y sin acentos</p>
                     </section>
@@ -34,8 +34,12 @@
                     </section>
                 
                     <section class="resultado">
-                        <img src="imagen/1.png" alt="" id="lupita"/>
- 
+                        <img src="imagen/mario.png" alt="" id="lupita"/>
+                       <div class="mensajeResultado" id="mensajeResultado">
+                            <h2 id="textoRa">Ningun mensaje fue encontrado</h2>
+                            <p id="textoRb">ingrese el texto que desea encriptar o desencriptar</p>
+                       </div>
+                        
                     </section>
                 
 
@@ -52,5 +56,5 @@
     </footer>    
         
     </body>
-     
+     <script src="encriptador.js"></script>
 </html>
